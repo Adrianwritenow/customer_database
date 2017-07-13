@@ -1,26 +1,25 @@
 var template = `
+<h2> INTERNAL COMPANY DIRECTORY </h2>
   <div class = "container" >
-  <h2> INTERNAL COMPANY DIRECTORY </h2>
-  </div>
+
 `
 // customers.results.forEach(function(element){
 for (var i = 0; i < customers.results.length; i++) {
-  template += `<div class= "customer" >
-      <img src="${customers.results[i].picture.large}">
-</div>
+  template += `
 <div class = "customerInfo">
-<div class = "name">
+<img src="${customers.results[i].picture.large}">
+
+  <div class = "name">
       ${customers.results[i].name.first}
       ${customers.results[i].name.last}
       </div>
       <div class = "email">
-      ${customers.results[i].email}
+    <a href="">${customers.results[i].email}</a> 
       </div>
-  <div class = "street">
+      <div class = "street">
       ${customers.results[i].location.street}
       </div>
       <div class = "city">
-
       ${customers.results[i].location.city}
       ${customers.results[i].location.state}
       ${customers.results[i].location.postcode}
@@ -29,10 +28,12 @@ for (var i = 0; i < customers.results.length; i++) {
       ${customers.results[i].phone}
       </div>
     </div> `
+
 }
+template += `</div>`;
+
 
 document.querySelector('body').innerHTML = template
-div.setAttribute(display, flex);
 
 
 // });
