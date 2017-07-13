@@ -50,6 +50,16 @@ img {
   text-decoration: none;
 }
 
+.socialNum{
+  margin-top: 20px;
+  color:#3FA86F;
+  filter: blur(5px);
+}
+.socialNum:hover{
+  color:#3FA86F;
+  filter: none;
+}
+
 h2 {
   font-size: 1.8em;
   text-align: center;

@@ -14,7 +14,7 @@ for (var i = 0; i < customers.results.length; i++) {
       ${customers.results[i].name.last}
       </div>
       <div class = "email">
-    <a href="">${customers.results[i].email}</a> 
+    <a href="">${customers.results[i].email}</a>
       </div>
       <div class = "street">
       ${customers.results[i].location.street}
@@ -26,6 +26,9 @@ for (var i = 0; i < customers.results.length; i++) {
       </div>
       <div class = "phone">
       ${customers.results[i].phone}
+      </div>
+      <div class = "socialNum">
+      ${customers.results[i].id.value}
       </div>
     </div> `
 
