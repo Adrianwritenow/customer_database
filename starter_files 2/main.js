@@ -5,14 +5,14 @@ var template = `
 `
 // customers.results.forEach(function(element){
 for (var i = 0; i < customers.results.length; i++) {
-  template += `
+    template += `
 <div class = "customerInfo">
 <img src="${customers.results[i].picture.large}">
 
   <div class = "name">
       ${customers.results[i].name.first}
       ${customers.results[i].name.last}
-      </div>
+  </div>
       <div class = "email">
     <a href="">${customers.results[i].email}</a>
       </div>
@@ -39,8 +39,7 @@ template += `</div>`;
 document.querySelector('body').innerHTML = template
 
 
-// });
-console.log(customers)
+console.log(customers);
 
 
 // for (var i = 0; i < customers.results.length; i++) {
