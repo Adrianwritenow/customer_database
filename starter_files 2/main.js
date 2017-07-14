@@ -1,34 +1,34 @@
 var template = `
 <h2> INTERNAL COMPANY DIRECTORY </h2>
-  <div class = "container" >
+<div class = "container" >
 
 `
 // customers.results.forEach(function(element){
 for (var i = 0; i < customers.results.length; i++) {
-    template += `
-<div class = "customerInfo">
-<img src="${customers.results[i].picture.large}">
+  template += `
+  <div class = "customerInfo">
+    <img src="${customers.results[i].picture.large}">
 
-  <div class = "name">
-      ${customers.results[i].name.first}
-      ${customers.results[i].name.last}
-  </div>
-      <div class = "email">
-    <a href="">${customers.results[i].email}</a>
-      </div>
+      <div class = "name">
+        ${customers.results[i].name.first}
+        ${customers.results[i].name.last}
+        </div>
+          <div class = "email">
+            <a href="">${customers.results[i].email}</a>
+          </div>
       <div class = "street">
-      ${customers.results[i].location.street}
+        ${customers.results[i].location.street}
       </div>
       <div class = "city">
-      ${customers.results[i].location.city}
-      ${customers.results[i].location.state}
-      ${customers.results[i].location.postcode}
+        ${customers.results[i].location.city}
+        ${customers.results[i].location.state}
+        ${customers.results[i].location.postcode}
       </div>
       <div class = "phone">
-      ${customers.results[i].phone}
+        ${customers.results[i].phone}
       </div>
       <div class = "socialNum">
-      ${customers.results[i].id.value}
+        ${customers.results[i].id.value}
       </div>
     </div> `
 
